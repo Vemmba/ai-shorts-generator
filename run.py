@@ -51,7 +51,17 @@ def setup() -> None:
     log("setup done.")
 
 
+BANNER = r"""
+  ┌─────────────────────────────────────────────────┐
+  │        ▄▄        AI SHORTS GENERATOR            │
+  │       ▐█▌        custom build by Vemmba         │
+  │        ▀▀   https://github.com/Vemmba           │
+  └─────────────────────────────────────────────────┘
+"""
+
+
 def main() -> None:
+    print(BANNER)
     args = sys.argv[1:]
     cmd = args[0] if args else "make"
     if cmd == "setup":
